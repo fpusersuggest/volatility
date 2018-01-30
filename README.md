@@ -1,6 +1,15 @@
-# volatility
+# effetturare un dump di ram con lime
+apt install make gcc
+apt install gcc-7/unstable
+apt install linux-headers-4.14.0-3-amd64
+wget https://github.com/504ensicsLabs/LiME/archive/master.zip
+unzip master.zip
+cd lime
+cd src
+make
 
-# creare profile per volatility
+
+# come creare un profilo per volatility
 apt install subversion -y
 torify svn checkout https://github.com/volatilityfoundation/volatility/trunk/tools/linux
 apt install build-essential dwarfdump
